@@ -1,0 +1,45 @@
+//for package one 
+package pak1;
+public class Student{
+	int rollno;
+		String name;
+		
+	public int getRoll(int r){
+			rollno=r;
+			return rollno;
+			
+		}
+		public String getName(String n){
+			name=n;
+			return name;
+		}
+		public static void main(String[] args){
+			
+		}
+}
+// for package two and import to the package one 
+package pak2;
+import pak1.Student;
+import java.util.Scanner;
+
+public class Stddata{
+static	int r;
+static String n;
+	public static void main(String[] args){
+	
+		Scanner sc=new Scanner(System.in);
+		Scanner c=new Scanner(System.in);
+		Student x=new Student();
+		System.out.println("enter roll number");
+		int p=sc.nextInt();
+		r=x.getRoll(p);
+		System.out.println("enter name");
+		String q=c.nextLine();
+		n=x.getName(q);
+		System.out.println("roll number "+r);
+		System.out.println("name "+n);
+		
+		//Student x=new Student();
+		//x.getName("Rohit");
+	}
+}
