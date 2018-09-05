@@ -1,0 +1,44 @@
+// package one
+package one;
+import java.util.Scanner;
+public class Faculty
+{
+	
+	public int fac1(int id){
+		
+		Scanner sc=new Scanner(System.in);
+System.out.println("enter id");
+				
+		id=sc.nextInt();
+		return id;
+    }
+	public	 String fac2(String name)
+		{
+			Scanner c=new Scanner(System.in);
+		System.out.println("enter name");
+		
+	 name=c.nextLine();
+		return name;
+	    }
+	//public static void main(String arg[]){
+		
+	//}	
+}
+	//package two
+  package two;
+import one.Faculty;
+public class Facultydata{
+	//int fac1(int id);
+	//int fac2(String name);
+	public static void main(String []args)
+	{
+		//int f;
+		//string s;
+		Faculty f= new Faculty();
+		
+		
+		System.out.println("Id is:"+f.fac1(12));
+			
+		System.out.println("Name is :"+f.fac2("atul"));
+	}
+} 
