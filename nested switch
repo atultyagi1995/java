@@ -1,0 +1,37 @@
+import java.util.*;
+class Emp{
+	public static void main(String[] args){
+		int id;
+		String department="mca";
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter id");
+		id=sc.nextInt();
+		switch(id)
+		{
+				case 1:
+				//System.out.println("enter department");
+			//	department=sc.nextLine();
+				switch(department)
+				{
+				case "mca":
+				System.out.println("Atul from mca id is 1");
+				break;
+				default:
+				System.out.println("atul not in mba");
+				}
+			break;
+					case 2:
+				//	department=sc.nextLine();
+					switch(department){
+					case "mba":
+					System.out.println("varun from mca id is 1");
+					break;
+					default:
+						System.out.println("varun not in mba");
+				}
+			break;
+			default:
+			System.out.println("nothing");
+		}
+	}
+}
