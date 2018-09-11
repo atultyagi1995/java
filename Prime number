@@ -1,0 +1,32 @@
+import java.util.*;
+class Primenumber{
+	int number,i,M;
+		
+	public static void main(String[] args){
+	//	int number,i;
+		Primenumber n=new Primenumber();
+		n.prime();
+	}
+	void prime(){
+		int m ,flag=0,i;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter number");
+		number=sc.nextInt();
+		for(i=2;i<=number/2;i++){
+			m=number%i;	
+			if(m==0)
+			{
+				flag=1;
+		
+			}
+		}
+			if(flag==0)
+		{
+			System.out.println(" prime");
+		}
+		else{
+				System.out.println("not a prime");
+		}
+		
+	}
+}
