@@ -1,0 +1,17 @@
+class Objectthroughconstructor{
+	int id;
+	String name;
+	Objectthroughconstructor(int i,String n){
+	id=i;
+name=n;
+	}
+	void display(){
+System.out.println(id+"\n"+name);
+	}
+}
+class Objectthroughconstructor1{
+	public static void main(String[] args){
+		Objectthroughconstructor s=new Objectthroughconstructor(12,"atul");
+		s.display();
+	}
+}
