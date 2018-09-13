@@ -1,0 +1,18 @@
+class Staticvariable{
+	int id;
+	String name;
+	static String college="KIET";
+	Staticvariable(int i,String n){
+	id=i;
+name=n;
+	}
+	void display(){
+System.out.println(id+"\n"+name+"\n"+college);
+	}
+
+
+	public static void main(String[] args){
+		Staticvariable s=new Staticvariable(12,"atul");
+		s.display();
+	}
+}
