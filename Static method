@@ -1,0 +1,23 @@
+class Staticmethod{
+	int id;
+	String name;
+	static String college="kiet";
+	static void change(){
+		college="ITS";
+	}
+	Staticmethod(int i,String n)
+	{
+		id=i; 
+		name=n;
+	}
+	void disp(){
+		System.out.println(id+""+name+""+college);
+	}
+}
+class Staticmethod1{
+	public static void main(String[] args){
+	Staticmethod s=new Staticmethod(12,"atul");
+	Staticmethod.change();
+	s.disp();
+	}
+}
