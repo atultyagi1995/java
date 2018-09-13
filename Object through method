@@ -1,0 +1,18 @@
+class Objectthroughmethod{
+	int id ;
+	String name;
+	void insert(int i,String n){
+		id=i;
+		name=n;
+	}
+	void display(){
+		System.out.println(id+"\n"+name);
+	}
+}
+class Objectthroughmethod1{
+	public static void main(String[] args){
+		Objectthroughmethod s=new Objectthroughmethod();
+		s.insert(12,"atul");
+		s.display();
+	}
+}
