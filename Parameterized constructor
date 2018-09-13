@@ -1,0 +1,17 @@
+class Parameterizedconstructor{
+	int id;
+	String name;
+	Parameterizedconstructor(int i,String n){
+	id=i;
+name=n;
+	}
+	void display(){
+System.out.println(id+"\n"+name);
+	}
+}
+class Objectthroughconstructor1{
+	public static void main(String[] args){
+	Parameterizedconstructor s=new Parameterizedconstructor(12,"atul");
+		s.display();
+	}
+}
