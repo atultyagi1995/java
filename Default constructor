@@ -1,0 +1,8 @@
+class Defaultconstructor{
+	Defaultconstructor(){
+		System.out.println("i love u");
+	}
+	public static void main(String[] args){
+		Defaultconstructor b=new Defaultconstructor();
+	}
+}
