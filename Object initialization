@@ -1,0 +1,12 @@
+class Objectinitialization{
+	int id; 
+	String name;
+}
+class Objectinitialization1{
+	public static void main(String[] args){
+		Objectinitialization s=new Objectinitialization();
+		s.id=16191060;
+		s.name="ATUL TYAGI";
+		System.out.println(s.id+"\n"+s.name);
+	}
+}
