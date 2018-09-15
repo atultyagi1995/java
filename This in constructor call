@@ -1,0 +1,25 @@
+class Thisinconstructorcall{
+	int id;
+	String name,course;
+	static float fee=100f;
+	Thisinconstructorcall(int id,String name,String course){
+		this.id=id;
+		this.name=name;
+		this.course=course;
+	}
+	Thisinconstructorcall(int id,String name,String course,float fee){
+	this(id,name,course);
+	this.fee=fee;
+	}
+	void disp()
+	{
+		System.out.println(id+"\n"+name+"\n"+course+"\n"+fee);
+	}
+	public static void main(String[] args){
+	Thisinconstructorcall s=new Thisinconstructorcall(1,"atul","mca");
+	Thisinconstructorcall s1=new Thisinconstructorcall(2,"varun","mca",100.5f);
+	s.disp();
+
+	s1.disp();
+	}
+}
