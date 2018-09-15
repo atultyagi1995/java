@@ -1,0 +1,12 @@
+class Thispassinmethod {
+	void	n(Thispassinmethod s){
+		System.out.println("hello");
+	}
+	void m(){
+		n(this);
+	}
+	public static void main(String[] args){
+		Thispassinmethod s=new Thispassinmethod ();
+		s.m();
+	}
+}
