@@ -1,0 +1,31 @@
+import java.util.*;
+class A{
+	void a(){
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter student name");
+	String name=sc.nextLine();
+	
+	System.out.println("enter student id");
+	int id=sc.nextInt();
+	System.out.println("student id is"+id+"\nstudent name is"+name);
+	}
+}
+class  B{
+
+	void b(){
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter faculty  name");
+	String name=sc.nextLine();
+	
+	System.out.println("enter faculty id");
+	int id=sc.nextInt();
+	System.out.println("faculty id is"+id+"\nfaculty name is"+name);
+		
+	}
+	public static void main(String[] args){
+		B d=new B();
+		A p=new A();
+		p.a();
+		d.b();
+	}
+}
