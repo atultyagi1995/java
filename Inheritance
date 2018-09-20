@@ -1,0 +1,25 @@
+import java.util.*;
+class Inheritance{
+	
+	int id ;
+	float salery;
+	void fun(){
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter id");
+	id=sc.nextInt();
+		System.out.println("id is"+id);
+	System.out.println("enter salary");
+	salery=sc.nextFloat();
+		System.out.println("salery is"+salery);
+	}
+	}
+	class Inheritance1 extends Inheritance{
+		String name="ATUL TYAGI";
+		public static void main(String[] args)
+		{
+			Inheritance1 p=new Inheritance1();
+		//P.Inheritance1();
+		p.fun();		
+		}
+		
+	}
