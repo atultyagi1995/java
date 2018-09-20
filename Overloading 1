@@ -1,0 +1,17 @@
+ class A{
+	void add(int a,int b){
+		int s=a+b;
+		System.out.println(s);
+	}
+	void add(float a,float b){
+		float s=a+b;
+			System.out.println(s);
+	}
+ }
+class B extends A{
+	public static void main(String[] args){
+		B f=new B();
+		f.add(1,2);
+		f.add(2,3);
+	}
+}
