@@ -1,0 +1,40 @@
+import java.util.*;
+class Multilevelinheritance{
+	int id;
+	String name;
+	void student(){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter student name");
+		name=sc.nextLine();
+		System.out.println("enter student id");
+		id=sc.nextInt();
+		System.out.println("name is \n"+name);
+		
+		System.out.println("id is \n"+id);
+		
+	}
+}
+class Multilevelinheritance1 extends Multilevelinheritance{
+	void faculty(){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter faculty  name");
+		String f_name=sc.nextLine();
+		System.out.println("enter faculty  id");
+		int f_id=sc.nextInt();
+		System.out.println("faculty name is \n"+f_name);
+		
+		System.out.println("faculty id is \n"+f_id);
+		
+	}
+}
+class Multilevelinheritance2 extends Multilevelinheritance1{
+	void disp(){
+		System.out.println("hello");	
+	}
+	public static void main(String[] args){
+		Multilevelinheritance2 d=new Multilevelinheritance2 ();
+		d.disp();
+		d.student();
+		d.faculty();
+	}
+}
