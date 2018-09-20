@@ -1,0 +1,46 @@
+import java.util.*;
+class A{
+	void student()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter student name");
+		String s_name=sc.nextLine();
+	
+		System.out.println("enter student id");
+		int s_id=sc.nextInt();
+		System.out.println("Student name is"+s_name);
+		System.out.println(" Student id is"+s_id);	
+	
+	}
+}
+class B extends A{
+	void faculty(){
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter faculty name");
+		String f_name=sc.nextLine();
+		
+		System.out.println("enter faculty id");
+		int f_id=sc.nextInt();
+		System.out.println("faculty name is"+f_name);
+	
+		System.out.println("faculty id is"+f_id);
+	
+		
+	}
+}
+class C extends A{
+	void disp(){
+		System.out.println("hello");
+	}
+	
+}
+class Hierarchicalinheritance {
+	public static void main(String[]  args){
+C d=new C()	;
+B s=new B();
+	d.disp();
+		d.student();
+	s.faculty();
+	
+	}
+}
