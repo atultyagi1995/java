@@ -1,0 +1,17 @@
+class Singleinheritance{
+	void student(){
+		System.out.println("hii");
+	}
+	
+}
+class Singleinheritance1 extends Singleinheritance{
+	void faculty(){
+			System.out.println("hello");
+	}
+	public static void main(String[] args){
+	Singleinheritance1 a=new Singleinheritance1();
+
+	a.student();
+		a.faculty();
+		}
+	}
