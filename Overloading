@@ -1,0 +1,15 @@
+class Overloading{
+	int add(int a,int b){
+		return a+b;
+	}
+	int add(int a,int b,int c){
+		return a+b+c;
+	}
+}
+ class Overloading1 extends Overloading{
+	public static void main(String[] args){
+		Overloading1 d=new Overloading1();
+		System.out.println(d.add(1,2));
+				System.out.println(d.add(1,2,3));
+	}
+}
