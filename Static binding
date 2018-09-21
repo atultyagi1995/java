@@ -1,0 +1,9 @@
+class Staticbinding{
+	void fun(){
+		System.out.println("hii");
+	}
+	public static void main(String[] args){
+		Staticbinding s=new Staticbinding();
+		s.fun();
+	}
+}
