@@ -1,0 +1,19 @@
+class Overriding{
+	void fun1(int a,int b){
+		
+		int s=a+b;
+		System.out.println(s);
+	}
+}
+class Overriding1 extends Overriding{
+void  fun1(int a,int b){
+		
+		int s=a+b;
+		System.out.println(s);
+		
+	}
+	public static void main(String[] args){
+		Overriding1 d=new Overriding1();
+		d.fun1(3,4);
+	}
+}
