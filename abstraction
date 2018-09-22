@@ -1,0 +1,18 @@
+abstract class Bank{
+	abstract void name();
+}
+class Pnb extends Bank{
+	void name(){
+		System.out.println("punjab bational bank");
+	}
+}
+class Pnb1 extends Bank{
+	void name()
+	{
+		System.out.println("PNB");
+	}
+	public static void main(String[] args){
+		Bank n=new Pnb1();
+		n.name();
+	}
+}
