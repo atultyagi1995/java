@@ -1,0 +1,21 @@
+abstract class Bank{
+	abstract int interst();
+}
+class PNB extends Bank{
+	int interst(){return(7);
+
+	}
+}
+class SBI extends Bank{
+	int interst()
+	{
+		return(8);
+	
+	}
+	public static void main(String[] args){
+		Bank n=new SBI();
+		System.out.println("SBI interst"+n.interst()+"%");
+		Bank b=new PNB();
+		System.out.println("PNB interst"+b.interst()+"%");
+	}
+}
