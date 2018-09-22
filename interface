@@ -1,0 +1,14 @@
+interface Student{
+	int a=10;
+	void print();
+}
+class Faculty implements Student{
+	//int a=10;
+	public void print(){
+		System.out.println("student roll no is:"+a);
+	}
+	public static void main(String[] args){
+		Faculty f=new Faculty();
+		f.print();
+	}
+}
