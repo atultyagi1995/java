@@ -1,0 +1,26 @@
+interface a{
+	int x=5,y=4;
+;
+	void disp();
+}
+interface j extends a{
+	int f=9,h=3;
+	void print();
+}
+class B implements j{
+	
+int z=x+y;
+	public void disp(){
+		System.out.println(z);
+	}
+	int v=f+h;
+		public void print(){
+		System.out.println(v);
+	}
+	public static void main(String[] args){
+		B d=new B();
+		d.disp();
+		d.print();
+		
+	}
+}
