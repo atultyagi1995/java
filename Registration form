@@ -1,0 +1,49 @@
+// package one 
+package data;
+import java.util.*;
+public class Studentdata
+{
+	public void ssecurity(){
+	int id;
+	String name,course;
+	char sec;
+	
+	Scanner sc=new Scanner(System.in);
+		System.out.println("enter name");
+		name=sc.nextLine();
+		System.out.println("enter course");
+				course=sc.nextLine();
+				
+			System.out.println("enter section");
+			sec=sc.next().charAt(0);
+				System.out.println("enter id");
+					id=sc.nextInt();
+	
+					System.out.println(" name is:"+name+"\n section is:"+sec+"\n course is:"+course+"\nenter id:"+id);
+}
+}
+
+// package two
+package admin;
+//import data.*;
+import java.util.*;
+class Admin{
+	void security(){
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter password");
+	char password=sc.next().charAt(0);
+	System.out.println("enter id");
+	int id=sc.nextInt();
+	if(id==123 && password=='A'){
+		data.Studentdata s=new data.Studentdata();
+		s.ssecurity();
+	}
+	else{
+		System.out.println("not a valid user");
+	}
+	}
+	public static void main(String[] args){
+		Admin a=new Admin();
+		a.security();
+	}
+}
