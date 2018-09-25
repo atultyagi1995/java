@@ -1,0 +1,17 @@
+class Fibo{
+	void fib(){
+		int sum=1,temp=0,i,nsum;
+	
+	for(i=1;i<10;i++)
+	{
+		nsum=sum+temp;
+		System.out.println(sum);
+		temp=sum;
+		sum=nsum;
+	}
+	}
+	public static void main(String[] args){
+		Fibo f=new Fibo();
+		f.fib();
+	}
+}
