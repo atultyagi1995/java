@@ -1,0 +1,30 @@
+ interface student{
+	
+ void F();
+ }
+ class  Hay implements student{
+	public void	F(){
+		int sum=1,temp=0,i,nsum;
+	
+	for(i=1;i<10;i++)
+	{
+		nsum=sum+temp;
+		System.out.println(sum);
+		temp=sum;
+		sum=nsum;
+	}
+	}
+
+		Hay(){
+			
+			System.out.println("series is");
+	
+		
+		}
+
+	public static void main(String[] args){
+		
+		Hay f=new Hay();
+		f.F();
+	}
+}
